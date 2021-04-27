@@ -13,7 +13,7 @@ public class BaseballGame {
 
         boolean gameFlag = true;
         while(gameFlag) {
-            System.out.println("숫자를 입력해주세요 : ");
+            System.out.println(" 숫자를 입력해주세요 : ");
             Scanner scanner = new Scanner(System.in);
             gameFlag = confirmResult(scanner.nextInt()+"");
             if(strikeCnt == 0 && bollCnt == 0) {
@@ -24,6 +24,7 @@ public class BaseballGame {
                 System.out.println(strikeCnt + " 스트라이크 " + bollCnt + " 볼 입니다.");
             }
 
+            //초기화
             strikeCnt = 0;
             bollCnt = 0;
         }
